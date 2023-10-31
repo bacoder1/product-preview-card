@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" class="min-h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Product preview card component</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="h-screen min-h-full">
+    <div class="m-0 flex h-full w-full items-center justify-center bg-cream">
+      <div
+        class="flex w-[343px] flex-col rounded-xl bg-white transition-all lg:h-[450px] lg:w-[600px] lg:flex-row"
+      >
+        <img
+          src="./images/image-product-mobile.jpg"
+          alt="product"
+          class="w-full rounded-t-xl object-cover transition-all lg:hidden lg:h-full lg:w-1/2"
+        />
+        <img
+          src="./images/image-product-desktop.jpg"
+          alt="product"
+          class="hidden h-full w-1/2 rounded-t-xl object-cover transition-all lg:block"
+        />
+        <div
+          class="flex flex-col rounded-b-xl p-[24px] transition-all lg:w-1/2"
+        >
+          <h2
+            class="font-montserrat text-dark-grayish-blue text-xs font-light lg:mt-1.5"
+          >
+            P E R F U M E
+          </h2>
+          <h1
+            class="font-fraunces mt-3 text-[2.1rem] leading-[2.125rem] text-black"
+          >
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p
+            class="text-dark-grayish-blue font-montserrat mt-[1.15rem] text-[14px] font-medium leading-6 lg:mt-[1.75rem]"
+          >
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="mt-6 flex flex-row items-center">
+            <span class="font-fraunces text-green text-4xl">$149.99</span
+            ><s class="text-dark-grayish-blue font-montserrat ml-4 text-sm"
+              >$169.99</s
+            >
+          </div>
+          <button
+            class="font-montserrat bg-green hover:bg-dark-green mt-5 flex h-12 flex-row items-center justify-center rounded-xl text-[14px] font-bold text-white transition-all duration-300"
+          >
+            <img src="./images/icon-cart.svg" alt="cart" class="mr-2.5" />Add to
+            Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
